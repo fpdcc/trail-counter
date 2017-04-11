@@ -1,0 +1,23 @@
+{
+  "name": "trail-counter",
+  "version": "1.0.0",
+  "description": "trail counter code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpdcc/trail-counter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpdcc/trail-counter/issues"
+  },
+  "homepage": "https://github.com/fpdcc/trail-counter#readme",
+  "dependencies": {
+    "epoch-charting": "^0.8.4"
+  }
+}
