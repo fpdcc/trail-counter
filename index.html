@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>FPD Trail Counter</title>
+    <script src="node_modules/d3/d3.min.js"></script>
+    <link href="node_modules/c3/c3.css" rel="stylesheet" type="text/css">
+    <script src="node_modules/c3/c3.min.js"></script>
+
+
+</head>
+
+
+<body>
+  <div id="chart"></div>
+  <input type="button" value="Refresh Page" onClick="window.location.reload()">
+
+  <script type="text/javascript">
+  var chart = c3.generate({
+        data: {
+            url: 'http://data.sparkfun.com/output/AJ6zxY8m8XuNbq3V5day.json',
+            mimeType: 'json',
+        keys: {
+          x: 'date',
+          value: ["trail_user", "bicycle", ]
+          }
+        },
+        axis: {
+          x: {
+            type: "category"
+          }
+        }
+    });
+
+  </script>
+</body>
