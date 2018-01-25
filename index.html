@@ -4,34 +4,14 @@
 <head>
     <meta charset=utf-8 />
     <title>FPD Trail Counter</title>
-    <script src="https://cdn.rawgit.com/fpdcc/trail-counter/master/node_modules/d3/d3.min.js"></script>
-    <link href="https://cdn.rawgit.com/fpdcc/trail-counter/master/node_modules/c3/c3.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.rawgit.com/fpdcc/trail-counter/master/node_modules/c3/c3.min.js"></script>
 
 
 </head>
 
 
 <body>
-  <div id="chart"></div>
-  <input type="button" value="Refresh Page" onClick="window.location.reload()">
-
-  <script type="text/javascript">
-  var chart = c3.generate({
-        data: {
-            url: 'https://data.sparkfun.com/output/AJ6zxY8m8XuNbq3V5day.json',
-            mimeType: 'json',
-        keys: {
-          x: 'date',
-          value: ["trail_user", "bicycle", ]
-          }
-        },
-        axis: {
-          x: {
-            type: "category"
-          }
-        }
-    });
-
-  </script>
+  <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/411355/maps/channel_show"></iframe>
+  <iframe width="750" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/411355/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=column&width=750&title=Trail+Counter+1+-+Bicycle+Count"></iframe>
+  <iframe width="750" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/411355/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=column&width=750&title=Trail+Counter+1+-+Jogger+Count"></iframe>
+  <iframe width="750" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/411355/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=column&width=750&title=Trail+Counter+1+-+Horse+Count"></iframe>
 </body>
